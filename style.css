@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightskyblue;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.calendar-container {
+    background: lightgray;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 2rem gray;
+    padding: 2rem;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid green;
+    align-items: center;
+}
+
+.day-header-weekend {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Color weekend columns (Saturday and Sunday) using nth-child.
+   Note: this depends on the DOM order inside .calendar (row-major). */
+.calendar > *:nth-child(7n+6),
+.calendar > *:nth-child(7n) {
+    color: red;
+}
+
+.calendar-header h1 {
+    font-size: 24px;
+    color: black;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-btn {
+    background: green;
+    color: white;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.nav-btn:hover {
+    background: blue;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-header {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.date {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: black;
+    transition: all 0.5s ease;
+    background: white;
+}
+
+.date:hover {
+    background-color: skyblue;
+}
+
+.date.today {
+    background: green;
+    color: white;
+    font-weight: bold;
+}
+
+.date.today:hover {
+    background: blue;
+}
+
+/* Responsive tweaks for smaller screens */
+/*
+@media (max-width: 600px) {
+    .calendar-container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .calendar-header h1 {
+        font-size: 20px;
+    }
+
+    .nav-btn {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .day-header {
+        font-size: 12px;
+        padding: 0.25rem;
+    }
+
+    .calendar {
+        gap: 0.35rem;
+    }
+
+    .date {
+        font-size: 14px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-btn {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .day-header {
+        font-size: 11px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+}
+
+
