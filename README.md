@@ -13,6 +13,7 @@ Kurz: Die Seite hat klare Struktur (HTML) und einfaches Design (CSS). Das Layout
 9. Hervorhebungen: Wochenenden rot, heutiger Tag mit `.today` grün markiert.
 10. Interaktion: Hover-Effekte für Buttons und Tage (Farbe ändert sich).
 11. Responsives Verhalten: Flexible Einheiten (z. B. `rem`, `%`, `vw`) und `aspect-ratio` verwendet.
+12. Adaptives Disign für mobiles Geräte hinzufügt. `@media`. Das wird sich nach die Große von 400px ändern zur mobiles Aussicht.
 
 
 

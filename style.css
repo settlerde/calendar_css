@@ -18,10 +18,9 @@ body {
     background: lightgray;
     border-radius: 1.5rem;
     box-shadow: 0 1rem 2rem gray;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 30rem;
-    width: 100%;
-}
+    width: 100%;}
 
 .calendar-header {
     display: flex;
@@ -41,8 +40,9 @@ body {
 
 /* Color weekend columns (Saturday and Sunday) using nth-child.
    Note: this depends on the DOM order inside .calendar (row-major). */
-.date:nth-child(7n+6),
-.date:nth-child(7n+7) {
+.date:nth-child(7n+6), /*' Samstag */
+.date:nth-child(7n)  /*' Sontag */
+{
     color: red;
 }
 
@@ -71,7 +71,7 @@ body {
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem;
+    gap: 0.3rem;
     justify-content: center;
     align-items: center;
 }
@@ -89,9 +89,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 0.75rem;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: bold;
     color: black;
     transition: all 0.5s ease;
     background: white;
@@ -111,5 +111,34 @@ body {
     background: blue;
 }
 
-/*
+/* Responsive design for smaller screens */
 
+@media (max-width: 400px) {
+    .calendar-container {
+        max-width: 100%;
+    }
+    .calendar-header h1 {
+        font-size: 1.25rem;
+    }
+    .calendar {
+        gap: 0.1rem;
+    }
+    .day-header {
+        font-size: 1rem;
+    }
+    .day-header-weekend {
+        font-size: 1rem;
+    }
+    .nav-btn {
+        width: 2rem;
+        height: 2rem;
+    }
+    .date {
+        font-size: 1rem;
+        background: none;
+        aspect-ratio: 3 / 4;
+    }
+    body {
+        padding: 0.25rem;
+    }
+}
