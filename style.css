@@ -38,8 +38,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Color weekend columns (Saturday and Sunday) using nth-child.
-   Note: this depends on the DOM order inside .calendar (row-major). */
+/* Color weekend columns (Saturday and Sunday) using :nth-child. */
 .date:nth-child(7n+6), /*' Samstag */
 .date:nth-child(7n)  /*' Sontag */
 {
@@ -85,7 +84,7 @@ body {
 }
 
 .date {
-    aspect-ratio: 1;
+    aspect-ratio: 1; /* quadratisch */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +135,7 @@ body {
     .date {
         font-size: 1rem;
         background: none;
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 3 / 4; /* rechteckig */
     }
     body {
         padding: 0.25rem;

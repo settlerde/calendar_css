@@ -1,6 +1,7 @@
-Kurze Schritt-für-Schritt-Beschreibung:
+Kurze Schritt-für-Schritt-Beschreibung von Erstellung:
 
-Kurz: Die Seite hat klare Struktur (HTML) und einfaches Design (CSS). Das Layout ist flexibel und leicht anpassbar.
+Kurz: Der Kalender hat klare Struktur (HTML) und einfaches Design (CSS). Das Layout ist flexibel und leicht anpassbar (hoffentlich).
+Wcihtig ist `meta name viewport` fü adaptives design!
 
 1. Projekt angelegt: Die Dateien `index.html`, `style.css` und `README.md` erstellt.
 2. HTML erstellt: Ein Kalender-Container, ein Kopf-div mit Monat und Pfeil-Buttons, und ein Grid mit 7 Spalten.
