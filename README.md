@@ -1,22 +1,18 @@
-I have strted a newp roject # calendar_css
-This calendar should look a different way nearly to App.
+Kurze Schritt-für-Schritt-Beschreibung:
 
-Here i'll try to use the other way of coding, so make html structure using container wrappers.
-So the main div whrapper centers entire calendar.
-The header of calendar contains 2 buttons to navigate left and right beeatween month (for future JS code).
-Calendar grid set of 7 columns (week days), has also an empty cell/div container for proper day of week setting.
+Kurz: Die Seite hat klare Struktur (HTML) und einfaches Design (CSS). Das Layout ist flexibel und leicht anpassbar.
 
-CSS sheet starts with global settings * {
-    browser defaults
-}
-then body general settings {
-    using dvh units for viewport; center the block; background
-}
-calendar container settings: rounded corners, background, box shadow, padding set in rem units.
-calendar header {
-    flex spreads buttons and h1 apart
-}
-navigation buttons rounded, hover with transition applied
+1. Projekt angelegt: Die Dateien `index.html`, `style.css` und `README.md` erstellt.
+2. HTML erstellt: Ein Kalender-Container, ein Kopf-div mit Monat und Pfeil-Buttons, und ein Grid mit 7 Spalten.
+3. Leere Zellen (`empty`) eingefügt, damit die Tage richtig beginnen.
+4. Globales CSS *: Standardwerte zurücksetzen, Inhalt zentrieren, Hintergrundfarbe setzen.
+5. Kalender-Container: Ecken abgerundet, Schatten und Innenabstand (Padding) gesetzt.
+6. Kopfbereich: Nav-Buttons und Monatsname zentriert, Trennlinie hinzugefügt.
+7. Grid genutzt: `grid-template-columns: repeat(7, 1fr)` und Abstand mit `gap`.
+8. Datumszellen: Quadratisch durch `aspect-ratio`, Text zentriert mit Flexbox.
+9. Hervorhebungen: Wochenenden rot, heutiger Tag mit `.today` grün markiert.
+10. Interaktion: Hover-Effekte für Buttons und Tage (Farbe ändert sich).
+11. Responsives Verhalten: Flexible Einheiten (z. B. `rem`, `%`, `vw`) und `aspect-ratio` verwendet.
 
-calendar grid centered with grid settings for gaps used rem unit
+
 

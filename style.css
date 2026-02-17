@@ -41,13 +41,13 @@ body {
 
 /* Color weekend columns (Saturday and Sunday) using nth-child.
    Note: this depends on the DOM order inside .calendar (row-major). */
-.calendar > *:nth-child(7n+6),
-.calendar > *:nth-child(7n) {
+.date:nth-child(7n+6),
+.date:nth-child(7n+7) {
     color: red;
 }
 
 .calendar-header h1 {
-    font-size: 24px;
+    font-size: 2rem;
     color: black;
     flex: 1;
     text-align: center;
@@ -111,51 +111,5 @@ body {
     background: blue;
 }
 
-/* Responsive tweaks for smaller screens */
 /*
-@media (max-width: 600px) {
-    .calendar-container {
-        padding: 1rem;
-        max-width: 100%;
-    }
-
-    .calendar-header h1 {
-        font-size: 20px;
-    }
-
-    .nav-btn {
-        width: 2.25rem;
-        height: 2.25rem;
-    }
-
-    .day-header {
-        font-size: 12px;
-        padding: 0.25rem;
-    }
-
-    .calendar {
-        gap: 0.35rem;
-    }
-
-    .date {
-        font-size: 14px;
-        border-radius: 6px;
-    }
-}
-
-@media (max-width: 380px) {
-    .nav-btn {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .day-header {
-        font-size: 11px;
-    }
-
-    .date {
-        font-size: 12px;
-    }
-}
-
 
