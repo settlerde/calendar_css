@@ -17,11 +17,7 @@ body {
     width: 100%;
     text-align: center;
     margin: 2rem;
-    background: lightskyblue;
-    border-radius: 1.5rem;
-    box-shadow: 0 1rem 2rem gray;
     padding: 1rem;
-    border-style: groove;
 }
 
 .calendar-name {
@@ -46,7 +42,6 @@ p {
     padding: 1rem;
     max-width: 30rem;
     width: 100%;
-    border-style: groove;
 }
 
 .calendar-header {
@@ -140,12 +135,10 @@ p {
     max-width: 30rem;
     width: 100%;
     margin: 2rem;
-    background: lightskyblue;
     border-radius: 1.5rem;
     box-shadow: 0 1rem 2rem gray;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     border-style: groove;
-    font-style: italic;
 }
 .timeline:active {
     background: white;
