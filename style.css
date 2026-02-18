@@ -6,11 +6,22 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: lightskyblue;
-    min-height: 100dvh;;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header {
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+    background: lightskyblue;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 2rem gray;
+    padding: 1rem;
+    border-style: groove;
 }
 
 .calendar-name {
@@ -20,19 +31,7 @@ body {
     margin-bottom: 0.5rem;
     border-bottom: 0.1rem solid green;
     padding: 0.5rem;
-}
-
-.header {
-    max-width: 30rem;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    margin: 2rem;
     color: green;
-    background: lightgray;
-    border-radius: 1.5rem;
-    box-shadow: 0 1rem 2rem gray;
-    padding: 1rem;
 }
 
 p {
@@ -41,12 +40,13 @@ p {
 }
 
 .calendar-container {
-    background: lightgray;
+    background: lightskyblue;
     border-radius: 1.5rem;
     box-shadow: 0 1rem 2rem gray;
     padding: 1rem;
     max-width: 30rem;
     width: 100%;
+    border-style: groove;
 }
 
 .calendar-header {
@@ -65,8 +65,8 @@ p {
 }
 
 /* Color weekend columns (Saturday and Sunday) using :nth-child. */
-.date:nth-child(7n+6), /*' Samstag */
-.date:nth-child(7n)  /*' Sontag */
+.date:nth-child(7n+6), /* Samstag */
+.date:nth-child(7n)  /* Sonntag */
 {
     color: red;
 }
@@ -123,7 +123,7 @@ p {
 }
 
 .date:hover {
-    background-color: skyblue;
+    background-color: lightgray;
 }
 
 .date.today {
@@ -136,11 +136,30 @@ p {
     background: blue;
 }
 
+.timeline {
+    max-width: 30rem;
+    width: 100%;
+    margin: 2rem;
+    background: lightskyblue;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 2rem gray;
+    padding: 1rem 2rem;
+    border-style: groove;
+    font-style: italic;
+}
+.timeline:active {
+    background: white;
+}
+li {
+    list-style: inside;
+}
+
 /* Responsive design for smaller screens */
 
 @media (max-width: 400px) {
     .calendar-container {
         max-width: 100%;
+        background-color: lightskyblue;
     }
     .calendar-header h1 {
         font-size: 1.25rem;
@@ -165,11 +184,16 @@ p {
     }
     body {
         padding: 0.25rem;
+        background-color: white;
     }
     p {
         font-size: 0.75rem;
     }
     .calendar-name {
         font-size: 1rem;
+    }
+    .timeline {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.75rem;
     }
 }
