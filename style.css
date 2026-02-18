@@ -7,11 +7,37 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: lightskyblue;
-    min-height: 100dvh;
+    min-height: 100dvh;;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 2rem;
+}
+
+.calendar-name {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem gray;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.1rem solid green;
+    padding: 0.5rem;
+}
+
+.header {
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem;
+    color: green;
+    background: lightgray;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 2rem gray;
+    padding: 1rem;
+}
+
+p {
+    text-indent: 1rem;
+    text-align: justify;
 }
 
 .calendar-container {
@@ -20,11 +46,11 @@ body {
     box-shadow: 0 1rem 2rem gray;
     padding: 1rem;
     max-width: 30rem;
-    width: 100%;}
+    width: 100%;
+}
 
 .calendar-header {
     display: flex;
-    margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid green;
     align-items: center;
@@ -135,9 +161,15 @@ body {
     .date {
         font-size: 1rem;
         background: none;
-        aspect-ratio: 3 / 4; /* rechteckig */
+        aspect-ratio: 5 / 4; /* rechteckig */
     }
     body {
         padding: 0.25rem;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+    .calendar-name {
+        font-size: 1rem;
     }
 }
