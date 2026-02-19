@@ -19,7 +19,7 @@ body {
 
 .calendar-name {
     font-size: 2rem;
-    text-shadow: 0.1rem 0.1rem 0.2rem gray;
+    text-shadow: 0.1rem 0.1rem 0.2rem lightcoral;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     border-bottom: 0.1rem solid green;
@@ -35,7 +35,7 @@ p {
 .calendar-container {
     background: lightskyblue;
     border-radius: 1.5rem;
-    box-shadow: 0 1rem 2rem gray;
+    box-shadow: 0 1rem 1.5rem lightcoral;
     padding: 1rem;
     max-width: 30rem;
     width: 100%;
@@ -46,6 +46,9 @@ p {
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid green;
     align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: green;
 }
 
 
@@ -56,26 +59,22 @@ p {
     color: red;
 }
 
-.calendar-header h1 {
-    font-size: 2rem;
-    color: black;
+.calendar-header > h2 {
     flex: 1;
-    text-align: center;
 }
 
 .nav-btn {
-    background: green;
-    color: white;
     border: none;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease;
+    font-weight: 900;
 }
 
 .nav-btn:hover {
-    background: blue;
+    background: green;
 }
 
 .calendar {
@@ -125,7 +124,7 @@ p {
 }
 
 .date.today:hover {
-    background: blue;
+    background: lightgrey;
 }
 
 .timeline {
@@ -139,22 +138,21 @@ p {
 .timeline:active {
     background: white;
 }
+
 li {
     list-style: inside;
+    color: green;
+    font-weight: 600;
 }
 
 /* Responsive design for smaller screens */
 
 @media (max-width: 400px) {
     .calendar-container {
-        max-width: 100%;
         background-color: lightskyblue;
     }
-    .calendar-header h1 {
+    h2 {
         font-size: 1.25rem;
-    }
-    .calendar {
-        gap: 0.1rem;
     }
     .day-header {
         font-size: 1rem;
