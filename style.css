@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,7 +14,6 @@ body {
     max-width: 30rem;
     width: 100%;
     text-align: center;
-    margin: 2rem;
     padding: 1rem;
 }
 
@@ -51,13 +48,6 @@ p {
     align-items: center;
 }
 
-.day-header-weekend {
-    color: red;
-    text-align: center;
-    font-weight: bold;
-    padding: 0.5rem;
-    text-transform: uppercase;
-}
 
 /* Color weekend columns (Saturday and Sunday) using :nth-child. */
 .date:nth-child(7n+6), /* Samstag */
@@ -100,7 +90,15 @@ p {
     text-align: center;
     font-weight: bold;
     color: green;
-    padding: 0.5rem;
+    padding: 1rem 0.25rem;
+    text-transform: uppercase;
+}
+
+.day-header-weekend {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 0.25rem;
     text-transform: uppercase;
 }
 
@@ -112,7 +110,6 @@ p {
     border-radius: 0.75rem;
     cursor: pointer;
     font-weight: bold;
-    color: black;
     transition: all 0.5s ease;
     background: white;
 }
@@ -134,9 +131,8 @@ p {
 .timeline {
     max-width: 30rem;
     width: 100%;
-    margin: 2rem;
+    margin-top: 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 1rem 2rem gray;
     padding: 1.5rem 2rem;
     border-style: groove;
 }

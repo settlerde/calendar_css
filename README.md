@@ -4,9 +4,9 @@ Kurz: Der Kalender hat klare Struktur (HTML) und einfaches Design (CSS). Das Lay
 Wcihtig ist `meta name viewport` fü adaptives design!
 
 1. Projekt angelegt: Die Dateien `index.html`, `style.css` und `README.md` erstellt.
-2. HTML erstellt: Ein Kalender-Container, ein Kopf-div mit Monat und Pfeil-Buttons, und ein Grid mit 7 Spalten.
+2. HTML erstellt: Ein Kalender-Container, ein Kopf-div mit Monat und Pfeil-Buttons als Display Flex eingestellt, und Calendar als Grid mit 7 Spalten für Tage.
 3. Leere Zellen (`empty`) eingefügt, damit die Tage richtig beginnen.
-4. Globales CSS *: Standardwerte zurücksetzen, Inhalt zentrieren, Hintergrundfarbe setzen.
+4. Globales CSS `* , body`: Standardwerte zurücksetzen, Inhalt zentrieren, Hintergrundfarbe setzen.
 5. Kalender-Container: Ecken abgerundet, Schatten und Innenabstand (Padding) gesetzt.
 6. Kopfbereich: Nav-Buttons und Monatsname zentriert, Trennlinie hinzugefügt.
 7. Grid genutzt: `grid-template-columns: repeat(7, 1fr)` und Abstand mit `gap`.
