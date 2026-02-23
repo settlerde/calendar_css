@@ -16,5 +16,5 @@ Wcihtig ist `meta name viewport` fü adaptives design!
 11. Responsives Verhalten: Flexible Einheiten (z. B. `rem`, `%`, `vw`) und `aspect-ratio` verwendet.
 12. Adaptives Disign für mobiles Geräte hinzufügt. `@media`. Das wird sich nach die Große von 400px ändern zur mobiles Aussicht.
 13. Ich habe einen neuen Block `header` hinzugefügt und die Richtung von `flex` als Spalte geändert.
-14. Noch einen Block `timeline` mit der liste erstellt.
+14. Noch einen Block `timeline` mit d liste erstellt.
 
