@@ -65,21 +65,41 @@ p {
     flex: 1;
 }
 
-.nav-btn {
+#prevBtn {
     border: none;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease;
     font-weight: 900;
 }
 
-.nav-btn:hover {
+#prevBtn:hover {
+    background: green;
+}
+#nextBtn {
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: 900;
+}
+
+#nextBtn:hover {
     background: green;
 }
 
 .calendar {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#numbers-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 0.3rem;
@@ -119,13 +139,20 @@ p {
     background-color: lightgray;
 }
 
-.date.today {
+#dateToday {
     background: green;
     color: white;
     font-weight: bold;
+    aspect-ratio: 1; /* quadratisch */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-.date.today:hover {
+#dateToday:hover {
     background: lightgrey;
 }
 
@@ -161,10 +188,6 @@ li {
     }
     .day-header-weekend {
         font-size: 1rem;
-    }
-    .nav-btn {
-        width: 2rem;
-        height: 2rem;
     }
     .date {
         font-size: 1rem;
