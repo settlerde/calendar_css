@@ -65,17 +65,17 @@ p {
     flex: 1;
 }
 
-.nav-btn {
+#prevBtn, #nextBtn {
     border: none;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease;
     font-weight: 900;
 }
 
-.nav-btn:hover {
+#prevBtn:hover, #nextBtn:hover {
     background: green;
 }
 
