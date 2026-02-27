@@ -70,17 +70,3 @@ function getDayOfYear() {
 const dayCount = getDayOfYear();
 document.getElementById('dayNumber').innerHTML = dayCount;
 console.log(dayCount);
-//neu kalender wurde gestaltet
-/*const numbersGrid = document.getElementById('numbers-grid');
-function updaterCalendar() {
-    monthDisplay.innerText = monatListeDe[month];
-    numbersGrid.innerHTML = '';
-    let daysInMonth = new Date(2024, month + 1, 0).getDate();
-    for (let day = 1; day <= daysInMonth; day++) {
-        const dayDiv = document.createElement('div');
-        dayDiv.classList.add('date');
-        dayDiv.innerText = day;
-        numbersGrid.appendChild(dayDiv);
-    }
-    updateCalendar();
-}*/

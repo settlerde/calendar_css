@@ -66,6 +66,7 @@ p {
 }
 
 #prevBtn, #nextBtn {
+
     border: none;
     width: 2.5rem;
     height: 2.5rem;
@@ -119,13 +120,20 @@ p {
     background-color: lightgray;
 }
 
-.date.today {
+#dateToday {
     background: green;
     color: white;
     font-weight: bold;
+    aspect-ratio: 1; /* quadratisch */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-.date.today:hover {
+#dateToday:hover {
     background: lightgrey;
 }
 
@@ -161,10 +169,6 @@ li {
     }
     .day-header-weekend {
         font-size: 1rem;
-    }
-    .nav-btn {
-        width: 2rem;
-        height: 2rem;
     }
     .date {
         font-size: 1rem;
